@@ -13,7 +13,7 @@ export default defineConfig(() => {
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'maskable-icon.svg'],
-        manifest: {
+                manifest: {
           name: 'Contador de Calorías',
           short_name: 'CaloríasDev',
           description: 'Aplicación para el seguimiento de calorías con Google AI Studio',
@@ -23,23 +23,18 @@ export default defineConfig(() => {
           start_url: '/calorias-Dev/',
           icons: [
             {
-              src: 'pwa-192x192.png',
+              src: 'https://cdn-icons-png.flaticon.com/192/10433/10433048.png',
               sizes: '192x192',
               type: 'image/png'
             },
             {
-              src: 'pwa-512x512.png',
+              src: 'https://cdn-icons-png.flaticon.com/512/10433/10433048.png',
               sizes: '512x512',
               type: 'image/png'
-            },
-            {
-              src: 'pwa-512x512.png',
-              sizes: '512x512',
-              type: 'image/png',
-              purpose: 'any maskable'
             }
           ]
         }
+
       })
     ],
     resolve: {
